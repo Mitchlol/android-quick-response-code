@@ -25,12 +25,11 @@ import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.google.zxing.ResultPoint;
+import com.jwetherell.quick_response_code.camera.CameraManager;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import com.jwetherell.quick_response_code.R;
-import com.jwetherell.quick_response_code.camera.CameraManager;
-import com.google.zxing.ResultPoint;
 
 /**
  * This view is overlaid on top of the camera preview. It adds the viewfinder
@@ -39,7 +38,7 @@ import com.google.zxing.ResultPoint;
  * 
  * @author dswitkin@google.com (Daniel Switkin)
  */
-public final class ViewfinderView extends View {
+public class ViewfinderView extends View {
 
     private static final int[] SCANNER_ALPHA = { 0, 64, 128, 192, 255, 192, 128, 64 };
     private static final long ANIMATION_DELAY = 80L;
